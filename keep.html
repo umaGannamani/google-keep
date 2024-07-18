@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>My Notes App</title>
+        <link href="notesApp.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!--Input box for adding new notes -->
+            <div id="input-box">
+                <input type="text" placeholder= "Title" id="addTitle">
+                <textarea name="" id="addText" cols="30" rows="10" placeholder="Take a notew..."></textarea>
+                <button id="addNote">Add</button>
+            </div>
+            <!-- Container for displaying the notes -->
+             <div id="notes"></div>
+             <!-- Container for displaying the deleted notes -->
+              <h1>Deleted Notes</h1>
+              <div id="deletedNotes"></div>
+              <!-- Container for displaying the archived notes -->
+               <h1>Archived Notes</h1>
+               <div id="archivedNotes"></div>
+        </div>
+        <!-- External JavaScript file -->
+         <script src="notesApp.js"></script>
+    </body>
+</html>
